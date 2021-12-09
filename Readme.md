@@ -22,7 +22,7 @@ The document contains the high level commands that can be used to run this code 
 
 `truffle compile` to compile solidity code.
 
-`truffle migrate` to deploy the compiled code to local blockchain network.
+`truffle migrate (--reset)` to deploy the compiled code to local blockchain network.
 
 `truffle console` to access blockchain network.
 
