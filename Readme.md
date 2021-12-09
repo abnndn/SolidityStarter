@@ -8,6 +8,7 @@ Creating a Basic blockchain App.
 
 Prerequisites:
 
+#nodejs
 #truffle
 #ganache
 #Sublime as IDE, install package controller
