@@ -27,10 +27,14 @@ The document contains the high level commands that can be used to run this code 
 Run test using:
 `truffle test`
 
-#Internal Console commands for ease of use:
+#Few Internal Console commands to get started:
 
-`accounts = await web3.eth.getAccounts()`
-`blockNumber = await web3.eth.getBlockNumber()`
-`marketplace = await Marketplace.deployed()`
-`marketplace.address`
-`name = await marketplace.name()`
+`accounts = await web3.eth.getAccounts()`.
+
+`blockNumber = await web3.eth.getBlockNumber()`.
+
+`marketplace = await Marketplace.deployed()`.
+
+`marketplace.address`.
+
+`name = await marketplace.name()`.
