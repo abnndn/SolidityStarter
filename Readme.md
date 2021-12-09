@@ -38,3 +38,5 @@ Run test using:
 `marketplace.address`.
 
 `name = await marketplace.name()`.
+
+`migrate` to redeploy from inside truffle console
