@@ -31,7 +31,7 @@ contract Marketplace {
 	);
 
 	constructor() public {
-		name = "Marketplace 1";
+		name = "Blockchain Marketplace 1";
 	}
 
 	function createProduct(string memory _name, uint _price) public {
