@@ -12,7 +12,7 @@ class Navbar extends Component {
 	            target="_blank"
 	            rel="noopener noreferrer"
 	          >
-	            My Blockchain Marketplace 1
+	            My Blockchain Marketplace
 	          </a>
 	          <p className="text-white"> { this.props.account } </p>          
 	        </nav>
