@@ -45,6 +45,18 @@ Run test using:
 
 `migrate` to redeploy from inside truffle console
 
+#Resources for deploying smartContract to one of the remote test networks. In this case, Kovan network
+
+`https://kovan.etherscan.io/` Kovan test network.
+
+`https://infura.io/` to get access to ethereum node. "abhinandan1812@gmail.com/<password>"
+https://blog.infura.io/350000-developers-on-infura/
+
+Get Free Test eth for Kovan network:
+https://gitter.im/kovan-testnet/faucet# (through github)
+https://ethdrop.dev/
+
+
 #Useful NPM commands:
 
 `npm run start` starts the local server frontend on `http://localhost:3000/`
