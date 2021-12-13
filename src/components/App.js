@@ -3,6 +3,7 @@ import Web3 from 'web3';
 import logo from '../logo.png';
 import './App.css';
 import Marketplace from '../abis/Marketplace.json';
+import Navbar from './Navbar';
 
 class App extends Component {
 
@@ -17,19 +18,18 @@ class App extends Component {
         if (window.ethereum) {
             const web3 = new Web3(window.ethereum);
             try {
-                // Request account access if needed
-                await window.ethereum.enable();
-                // Acccounts now exposed
-                web3.eth.sendTransaction({/* ... */});
+              const accountId = await web3.eth.defaultAccount;
+
             } catch (error) {
                 // User denied account access...
             }
         }
         // Legacy dapp browsers...
-        else if (window.web3) {
-            const web3 = new Web3(window.web3.currentProvider)      // Accounts always exposed
-            web3.eth.sendTransaction({/* ... */});
-        }
+        // Commenting out the deprecated code. 
+        // else if (window.web3) {
+        //     const web3 = new Web3(window.web3.currentProvider)      // Accounts always exposed
+        //     web3.eth.sendTransaction({/* ... */});
+        // }
         // Non-dapp browsers...
         else {
             console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
@@ -48,6 +48,7 @@ class App extends Component {
     const networkId = await web3.eth.net.getId();
     const networkData = Marketplace.networks[networkId];
 
+    // Works when we're in the right network, mainnet or testnet.
     if(networkData) {
       const marketplace = web3.eth.Contract(Marketplace.abi, networkData.address);
       console.log(marketplace);
@@ -69,17 +70,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-          <a
-            className="navbar-brand col-sm-3 col-md-2 mr-0"
-            href="http://www.dappuniversity.com/bootcamp"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            My Blockchain Marketplace 1
-          </a>
-          <p className="text-white"> { this.state.account } </p>          
-        </nav>
+        <Navbar account= {this.state.account} />
         <div className="container-fluid mt-5">
           <div className="row">
             <main role="main" className="col-lg-12 d-flex text-center">

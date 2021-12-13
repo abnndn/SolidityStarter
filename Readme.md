@@ -1,6 +1,6 @@
 Reference Playlist: https://www.youtube.com/playlist?list=PLS5SEs8ZftgW6kyVyD43dLXK0xpfiaJBJ
 
-Guthub Fork: https://github.com/dappuniversity/starter_kit
+Github Fork: https://github.com/dappuniversity/starter_kit
 
 Creating a Basic blockchain App.
 
